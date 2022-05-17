@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="assets/js/index.js"></script>
+    <title>Personal Web - Contact Form</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left-side">
+            <a href="#"><img src="assets/image/dumbways.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a> </li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+    <form action="">
+        <h1 class="center">GET IN TOUCH</h1>
+        <div class="">
+            <label for="input-name" class="input-name">Name : </label>
+            <input type="text" id="input-name" />
+        </div>
+        <div class="">
+            <label for="input-email" class="input-email">Email : </label>
+            <input type="email" id="input-email" />
+        </div>
+
+        <div class="">
+            <label for="input-phone">Phone : </label>
+            <input type="text" id="input-phone" />
+        </div>
+
+        <div class="">
+            <label for="input-subject">Subject : </label>
+            <select name="" id="input-subject">
+                <option value="Talk">Talk</option>
+                <option value="Let's Collaboration">Let's Collaboration</option>
+                <option value="Create Project">Create Project</option>
+            </select>
+        </div>
+        <div class="">
+            <label for="input-your-message">Your Message : </label>
+            <textarea name="" id="input-your-message" cols="30" rows="5"></textarea>
+
+        </div>
+        <div class="">
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

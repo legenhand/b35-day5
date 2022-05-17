@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+body {
+    margin: 0px;
+    background-color: #DCE0E4;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    margin: 50px auto auto auto;
+    width: 400px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form input,
+select,
+textarea,form .upload-image-group {
+    border: none;
+    background-color: rgb(241, 241, 241);
+    padding: 8px 0px;
+    width: 100%;
+    border-radius: 6px;
+    margin: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 10px rgb(158, 158, 158);
+
+}
+
+
+
+textarea {
+    resize: vertical;
+}
+
+select option {
+    font-weight: 600;
+}
+
+button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 7px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
+.personal {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(145, 145, 145);
+}
+
+.container-content .left {
+    flex: 70%;
+    padding: 50px;
+}
+
+.container-content .right {
+    flex: 30%;
+    padding: 50px;
+}
+
+img.logo {
+    height: 30px;
+    margin: 7px 0px 0px 50px;
+}
+
+nav {
+    background-color: #F4F3F3;
+    display: flex;
+    height: 5vh;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-side {
+    flex: 80%;
+}
+
+nav .right-side {
+    flex: 20%;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a.active {
+    text-decoration: none;
+    color: rgb(230, 0, 0);
+    font-weight: 700;
+}
+
+nav .right-side a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 3px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.biodata {
+    background-color: rgb(255, 255, 255);
+}
+
+h1.center {
+    text-align: center;
+}
+
+.biodata a.contact-button {
+    color: white;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.biodata a.download-button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: black;
+    margin: 20px 0px 0px 0px;
+}
+
+.side-biodata {
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(145, 145, 145);
+    text-align: center;
+    height: 100%;
+}
+
+.side-biodata h2 {
+    margin: 0%;
+}
+
+.biodata a.sosmed {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    word-spacing: 30px;
+}
+
+.biodata .daftar-sosmed {
+    margin-top: 20px;
+}
+
+
+/* Project Form */
+
+.add-project{
+    height: 93vh;
+    background: #DCE0E4;
+}
+
+.container-flex-date {
+    Display: flex;
+    width: auto;
+}
+
+.container-flex-date .left {
+    flex: 50%;
+    padding: 0px 5px 0px 0px;
+}
+
+.container-flex-date .right {
+    flex: 50%;
+    padding: 0px 0px 0px 5px;
+}
+
+label.checkbox-tech {
+    font-size: 12pt;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+
+input[type='checkbox'] {
+    width: auto;
+}
+
+input[type="file"] {
+
+}
+
+/*form .upload-image-group {*/
+
+/*    width: 100%;*/
+/*    font-size: 20px;*/
+/*    font-weight: 400;*/
+/*    padding: 10px 0px;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 20px;*/
+/*    background: #f4f3f3;*/
+/*    border: 1px solid #c4c4c4;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+.upload-image-group label{
+    cursor: pointer;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background: #cdcdcd;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    color: #989898;
+}
+
+/*project list */
+
+.post-project{
+    background: #f6f6f6;
+    padding: 5vh 5vw;
+}
+
+.post-project h1{
+    text-align: center;
+}
+ .post-project .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 78vw;
+}
+.post-project .grid-item{
+    margin: 1vh 1vw;
+    background: #fdfdfd;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 1vw;
+    text-align: justify;
+}
+
+.post-project .grid-item p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.post-project .grid-item img{
+    width: 100%;
+    height: 33vh;
+    border-radius: 5px;
+}
+
+.post-project .title h2{
+    margin-bottom: 0px;
+}
+
+.post-project .title p {
+    margin-top: 0px;
+    color: #8F8B8B;
+}
+
+.tech-icon , .tech-icon img, .post-project .tech-icon img{
+    font-size: 30px;
+    height: 3vh;
+    width: auto;
+}
+
+.post-project .tech-icon{
+    display: flex;
+    gap: 20px;
+
+}
+
+.post-project .button{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.post-project .button button{
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 3vh 3px;
+    padding: 1vh 0px;
+}
+
+/* Detail Project */
+
+.project-detail {
+    padding: 0px 5vw;
+}
+
+.project-detail h1 {
+    text-align: center;
+    padding: 2vh;
+}
+
+.project-detail .container{
+    display: flex;
+    gap: 4vw;
+}
+
+.project-detail .container .item{
+    font-size: 20px;
+}
+
+.project-detail .container .item i{
+    font-size: 30px;
+}
+
+
+
+.project-detail #detail-image-project{
+    width: 55vw;
+}
+
+.project-detail .container .tech-icon{
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+}
+
+.project-detail .container .tech-icon .item-icon{
+    display: flex;
+    /*flex-direction: column;*/
+    font-size: 20px;
+    gap: 2vh;
+
+}
+
+.project-detail .container .tech-icon .item-icon i{
+    font-size: 30px;
+}
+
+
